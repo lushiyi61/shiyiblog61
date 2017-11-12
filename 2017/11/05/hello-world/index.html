@@ -43,8 +43,8 @@
 <!-- hack iOS CSS :active style -->
 <body ontouchstart="" class="animated fadeIn">
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost="true" data-istags="false
-" data-ishome="false">
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
@@ -75,10 +75,10 @@
                     <li>
                         <a href="/">Home</a>
                     </li>
+					
                     
-                        
-
-                                                        
+					
+					
                 </ul>
             </div>
         </div>
@@ -89,30 +89,31 @@
     // Drop Bootstarp low-performance Navbar
     // Use customize navbar with high-quality material design animation
     // in high-perf jank-free CSS3 implementation
-    //    var $body   = document.body;
+//    var $body   = document.body;
     var $toggle = document.querySelector('.navbar-toggle');
     var $navbar = document.querySelector('#huxblog_navbar');
     var $collapse = document.querySelector('.navbar-collapse');
 
     $toggle.addEventListener('click', handleMagic)
-    function handleMagic(e) {
+    function handleMagic(e){
         if ($navbar.className.indexOf('in') > 0) {
-            // CLOSE
+        // CLOSE
             $navbar.className = " ";
             // wait until animation end.
-            setTimeout(function () {
+            setTimeout(function(){
                 // prevent frequently toggle
-                if ($navbar.className.indexOf('in') < 0) {
+                if($navbar.className.indexOf('in') < 0) {
                     $collapse.style.height = "0px"
                 }
-            }, 400)
-        } else {
-            // OPEN
+            },400)
+        }else{
+        // OPEN
             $collapse.style.height = "auto"
             $navbar.className += " in";
         }
     }
 </script>
+
 <!-- Main Content -->
 
 <!--only post-->
@@ -236,9 +237,38 @@
                 
 
                 
+                    <li>
+                        <a target="_blank" href="http://weibo.com/61lushiyi">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                
+                
+                <li>
+                    <a target="_blank" href="https://user.qzone.qq.com/574488489">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-qq fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+                
 
                 
 
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/lushiyi61">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
                 
 
                 
